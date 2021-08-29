@@ -17,27 +17,27 @@ public class Main
             int choice = Integer.parseInt(reader.readLine());
 
             if (choice == 1){
-                System.out.print("Enter admin username: ");
+                System.out.print("Enter the admin username: ");
                 String username = reader.readLine();
-                System.out.print("Enter admin password: ");
+                System.out.print("Enter the admin password: ");
                 String password = reader.readLine();
 
                 var admin = Admin.Login(username, password);
                 admin.AdminMenu();
             }
             else if (choice == 2){
-                System.out.print("Enter patient username: ");
+                System.out.print("Enter the patient username: ");
                 String username = reader.readLine();
-                System.out.print("Enter patient password: ");
+                System.out.print("Enter the patient password: ");
                 String password = reader.readLine();
 
                 var patient = Admin.getPatient(username);
                 Patient.patientMenu(patient);
             }
             else if (choice == 3){
-                System.out.print("Enter new username: ");
+                System.out.print("Enter the new username: ");
                 var username = reader.readLine();
-                System.out.print("Enter new password: ");
+                System.out.print("Enter the new password: ");
                 var pass = reader.readLine();
 
                 Patient.CreateAccount(username, pass);
@@ -46,7 +46,7 @@ public class Main
                 break;
             }
             else{
-                System.err.print("Invalid choice. Please try again...");
+                System.err.print("ERROR! Invalid choice. Please try again...");
             }
         }
     }
