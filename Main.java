@@ -12,7 +12,7 @@ public class Main
     public static void main(String[] args) throws IOException {
         while (true){
             System.out.print(
-                    "Health-Care Appointment System\n\nEnter\n1. Admin Login\n2. Patient Login\n3. Patient Signup\n4. Exit\n\nChoice: "
+                    "AMC Health-Care Appointment System\n\nEnter\n1. Admin Login\n2. Patient Login\n3. Patient Signup\n4. Exit\n\nChoice: "
             );
             int choice = Integer.parseInt(reader.readLine());
 
