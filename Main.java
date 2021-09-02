@@ -7,6 +7,7 @@ import java.io.InputStreamReader;
 
 public class Main
 {
+    //You can use scanner function instead of bufferedreader
     private static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
     public static void main(String[] args) throws IOException {
